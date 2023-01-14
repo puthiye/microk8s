@@ -1,7 +1,5 @@
 # microk8s
 
-# microk8s
-
 - ubuntu 18.04 beaver
 
 - sudo snap install microk8s --classic --channel=1.18/stable
