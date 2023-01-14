@@ -15,7 +15,7 @@
 
 - sudo microk8s kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
 
-
+Refer - https://ubuntu.com/tutorials/install-a-local-kubernetes-with-microk8s#4-accessing-the-kubernetes-dashboard
 
 
 
