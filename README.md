@@ -18,29 +18,13 @@
 Refer - https://ubuntu.com/tutorials/install-a-local-kubernetes-with-microk8s#4-accessing-the-kubernetes-dashboard
 
 **TIPS**
+
 If you would like to skip user login/token auth for dashboard, follow the below steps
 
 - sudo microk8s.kubectl -n kube-system edit deploy kubernetes-dashboard -o yaml 
 
 Add the –enable-skip-login flag to the deployment’s specs:
 
-spec:
-  progressDeadlineSeconds: 600
-  replicas: 1
-  revisionHistoryLimit: 10
-  selector:
-    matchLabels:
-      k8s-app: kubernetes-dashboard
-  strategy:
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
-    type: RollingUpdate
-  template:
-    metadata:
-      creationTimestamp: null
-      labels:
-        k8s-app: kubernetes-dashboard
     spec:
       containers:
       - args:
@@ -48,5 +32,4 @@ spec:
         - --namespace=kube-system
         - --enable-skip-login
 
-Once we save the file, we’ll be able to access the dashboard by entering the following URL: 
 
