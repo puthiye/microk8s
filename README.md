@@ -32,4 +32,10 @@ Add the –enable-skip-login flag to the deployment’s specs:
         - --namespace=kube-system
         - --enable-skip-login
 
+**Troubleshooting**
+
+1. k8s pods running are not logging any print() logs. Fix is to add ENV PYTHONUNBUFFERED 1 in Dockerfile or update the container image with below code
+        env:
+         - name: PYTHONUNBUFFERED
+           value: "1"
 
