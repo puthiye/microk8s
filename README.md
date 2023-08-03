@@ -44,3 +44,6 @@ Add the –enable-skip-login flag to the deployment’s specs:
          - name: PYTHONUNBUFFERED
            value: "1"
 
+**Remove snap microk8s**
+- sudo microk8s reset
+- sudo snap remove microk8s
