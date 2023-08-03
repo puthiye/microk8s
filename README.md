@@ -3,7 +3,7 @@
 - ubuntu 18.04 beaver
 
 - For raspberry pi
-  - use this version sudo snap install microk8s --classic --channel=1.25
+  - use this version - sudo snap install microk8s --classic --channel=1.25
   - append these control groups - cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory in /boot/firmware/cmdline.txt
   - sudo apt install linux-modules-extra-raspi
   - reboot
