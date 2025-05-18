@@ -1,6 +1,6 @@
 # microk8s
 
-- ubuntu 20.04 beaver
+- ubuntu 20.04 
   
 - sudo snap install microk8s --classic --channel=1.32
 
