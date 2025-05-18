@@ -1,8 +1,8 @@
 # microk8s
 
-- ubuntu 18.04 beaver
+- ubuntu 20.04 beaver
   
-- sudo snap install microk8s --classic --channel=1.18/stable
+- sudo snap install microk8s --classic --channel=1.32
 
 - sudo ufw allow in on cni0 && sudo ufw allow out on cni0
 - sudo ufw default allow routed
